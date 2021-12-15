@@ -15,10 +15,12 @@ export const Header = (props) => {
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <div className="header">
+                            <img src={banana} alt="bananas" className="header__img"></img>
+                            <p className="header__description">{value}</p>
+                            <Button variant="outline-secondary" onClick={() => setValue(value + 10)}>+</Button>
+                        </div>
                     </Nav>
-                    <img src={banana} alt="bananas" className="header__img"></img>
-                    <p className="header__description">{value}</p>
-                    <Button variant="outline-secondary" onClick={() => setValue(value + 10)}>+</Button>
                 </Container>
             </Navbar>
         </>

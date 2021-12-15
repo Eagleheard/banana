@@ -1,4 +1,12 @@
-.header__description {
-    color: #FFFFFF;
-    margin: 0 10px;
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 300px;
+
+    &__description {
+        color: #FFFFFF;
+        margin: 0 10px;
+    }
 }
