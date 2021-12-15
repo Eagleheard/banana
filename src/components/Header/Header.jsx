@@ -4,21 +4,21 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import banana from "../../assets/banana.png";
 import "./Header.scss";
 
+
 export const Header = (props) => {
-    const [value, setValue] = useState(100);
+    const [count, setCount] = useState(100);
     return (
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="home">Navbar</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="home">Home</Nav.Link>
+                        <Nav.Link href='build'>Build</Nav.Link>
                         <div className="header">
                             <img src={banana} alt="bananas" className="header__img"></img>
-                            <p className="header__description">{value}</p>
-                            <Button variant="outline-secondary" onClick={() => setValue(value + 10)}>+</Button>
+                            <p className="header__description">{count}</p>
+                            <Button variant="outline-secondary" onClick={() => setCount(count + 10)}>+</Button>
                         </div>
                     </Nav>
                 </Container>
